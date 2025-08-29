@@ -48,11 +48,11 @@ callBtns.forEach((callbtn) => {
     let h1Text = card.querySelector(".hotlineNumber").textContent; // changed here
     let pText = card.querySelector("p").textContent;
 
-    alert(`${pText} \n${h1Text}`);
+    alert(`📞 Calling ${pText}... ${h1Text}`);
     coinCount.textContent = parseInt(coinCount.textContent) - 20;
 
     const newDiv = document.createElement("div");
-    newDiv.className = "new-card bg-gray-100 p-4 rounded-md mb-3 flex justify-between items-center";
+    newDiv.className = "new-card bg-gray-50 p-4 rounded-md mb-3 flex justify-between items-center";
 
 const now = new Date();
 const timeStr = now.toLocaleTimeString("en-US", { hour: "numeric", minute: "numeric", second: "numeric", hour12: true });
